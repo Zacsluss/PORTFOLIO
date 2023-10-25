@@ -1,0 +1,245 @@
+/* Hyperlink Styles */
+
+/* Loading Spinner Styles */
+.spinner-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 5px solid #000;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+a {
+  text-decoration: none; /* Remove the default underline */
+  color: inherit; /* Inherit the color from the parent text */
+}
+
+/* Header Styles */
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.637); /* Slightly Transparent White */
+}
+
+#subtitle {
+  font-size: 28px; /* You can adjust the size as needed */
+  position: relative;
+  top: -55px;
+}
+
+#section-header h2 {
+  font-size: 28px; /* Adjust the font size here */
+}
+
+/* About Me Section */
+.about-me-text {
+  font-size: 22px; /* Adjust the size as you like */
+  color: #fff; /* White */
+  background-color: rgba(0, 0, 0, 0.322);
+  border-radius: 24%;
+  padding: 3px;  /* Adjust as needed */
+}
+
+/* Contact Section */
+.contact-text-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 24%;
+  padding: 4px;  /* Adjust as needed */
+  padding-left: 16px;
+  padding-right: 16px;
+  display: inline-block;  /* Add this line */
+}
+
+/* Contact Section */
+.contact-text {
+  font-size: 22px; /* Adjust the size as you like */
+  color: #fff; /* White */
+}
+
+.contact-wrapper {
+  text-align: center;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffffe8; /* Slightly Transparent White */
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* Works Card Styles */
+.works-card img-title {
+  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  color: #fff; /* Solid White */
+  background-color: rgba(66, 64, 64, 0.315); /* Transparent Background */
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  padding: 3px;
+}
+
+.works-card img {
+  object-position: center;
+  max-width: 260px;
+  max-height: 200px;
+  border-radius: 24%;
+  vertical-align: center;
+}
+
+.works-card-container {
+  gap: 10em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.works-card {
+  position: relative;
+  width: auto;
+  max-width: 260px;
+  background-color: #00000000;
+  text-align: center;
+  flex: 0 0 auto;
+  border-radius: 24%;
+  display: flex;
+}
+
+.works-card:hover {
+  transform: scale(1.6);
+  transition: all 1.8s ease;
+}
+
+.works-card:not(:hover) {
+  transform: scale(1); /* Reset to the original size */
+  transition: all 1.8s ease;
+}
+
+/* Text Overlay Styles */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.514);
+  border-radius: 100%;
+  padding: 9px;
+  font-size: 130%;
+}
+
+.works-card:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Margin-top adjustments for different sections */
+#about-me {
+  margin-top: calc(12vh + 1em);
+  margin-bottom: calc(5vh + 1em);
+}
+#works {
+  margin-top: calc(1em);
+  margin-bottom: calc(1vh + 1em);
+}
+
+#contact {
+  margin-top: calc(1em);
+  margin-bottom: calc(6vh + 1em);
+}
+
+/* Center Sections */
+.center-section {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;  /* Vertically center */
+  flex-direction: column;
+}
+
+/* Section Headers */
+.section-header {
+  font-size: 20px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+/* iframe container */
+#iframe-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Vanta.Js Header */
+#vanta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Down Arrow Style */
+#down-arrow {
+  margin-top: 25px;
+  width: 4%;
+  height: auto;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
