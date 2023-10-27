@@ -1,5 +1,3 @@
-/* Hyperlink Styles */
-
 /* Loading Spinner Styles */
 .spinner-container {
   position: fixed;
@@ -54,21 +52,24 @@ a {
 
 #section-header h2 {
   font-size: 28px; /* Adjust the font size here */
+  background-color: rgba(0, 0, 0, 0.514);
+  border-radius: 24%;
+  padding: 18px;  /* Adjust as needed */
 }
 
 /* About Me Section */
 .about-me-text {
   font-size: 22px; /* Adjust the size as you like */
   color: #fff; /* White */
-  background-color: rgba(0, 0, 0, 0.322);
+  background-color: rgba(0, 0, 0, 0.514);
   border-radius: 24%;
-  padding: 3px;  /* Adjust as needed */
+  padding: 6px;  /* Adjust as needed */
 }
 
 /* Contact Section */
 .contact-text-container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgba(0, 0, 0, 0.514);
   border-radius: 24%;
   padding: 4px;  /* Adjust as needed */
   padding-left: 16px;
@@ -174,8 +175,8 @@ nav {
 
 /* Margin-top adjustments for different sections */
 #about-me {
-  margin-top: calc(12vh + 1em);
-  margin-bottom: calc(5vh + 1em);
+  margin-top: calc(0em);
+  margin-bottom: calc(1vh);
 }
 #works {
   margin-top: calc(1em);
@@ -184,7 +185,7 @@ nav {
 
 #contact {
   margin-top: calc(1em);
-  margin-bottom: calc(6vh + 1em);
+  margin-bottom: calc(2vh + 1em);
 }
 
 /* Center Sections */
