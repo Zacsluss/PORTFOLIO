@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  z-index: 9999;
+  z-index: 9999; 
 }
 
 .spinner {
@@ -25,9 +25,10 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 a {
-  text-decoration: none; /* Remove the default underline */
-  color: inherit; /* Inherit the color from the parent text */
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header Styles */
@@ -41,29 +42,29 @@ a {
   text-align: center;
   font-size: 48px;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.637); /* Slightly Transparent White */
+  color: rgba(255, 255, 255, 0.637);
 }
 
 #subtitle {
-  font-size: 28px; /* You can adjust the size as needed */
+  font-size: 28px;
   position: relative;
   top: -55px;
 }
 
 #section-header h2 {
-  font-size: 28px; /* Adjust the font size here */
+  font-size: 28px;
   background-color: rgba(0, 0, 0, 0.514);
   border-radius: 24%;
-  padding: 18px;  /* Adjust as needed */
+  padding: 18px;
 }
 
 /* About Me Section */
 .about-me-text {
-  font-size: 22px; /* Adjust the size as you like */
-  color: #fff; /* White */
+  font-size: 22px;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.514);
   border-radius: 24%;
-  padding: 6px;  /* Adjust as needed */
+  padding: 6px;
 }
 
 /* Contact Section */
@@ -71,31 +72,28 @@ a {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.514);
   border-radius: 24%;
-  padding: 4px;  /* Adjust as needed */
+  padding: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  display: inline-block;  /* Add this line */
+  display: inline-block;
 }
 
-/* Contact Section */
 .contact-text {
-  font-size: 22px; /* Adjust the size as you like */
-  color: #fff; /* White */
+  font-size: 22px;
+  color: #fff;
 }
 
 .contact-wrapper {
   text-align: center;
 }
 
-/* Body Styles */
 body {
   font-family: 'Lato', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #ffffffe8; /* Slightly Transparent White */
+  color: #ffffffe8;
 }
 
-/* Navigation Styles */
 nav {
   position: fixed;
   top: 0;
@@ -103,15 +101,14 @@ nav {
   z-index: 100;
 }
 
-/* Works Card Styles */
 .works-card img-title {
   display: none;
   position: relative;
   top: 50%;
   left: 50%;
   font-size: 14px;
-  color: #fff; /* Solid White */
-  background-color: rgba(66, 64, 64, 0.315); /* Transparent Background */
+  color: #fff;
+  background-color: rgba(66, 64, 64, 0.315);
   width: 100%;
   height: 100%;
   border-radius: 0;
@@ -150,11 +147,10 @@ nav {
 }
 
 .works-card:not(:hover) {
-  transform: scale(1); /* Reset to the original size */
+  transform: scale(1);
   transition: all 1.8s ease;
 }
 
-/* Text Overlay Styles */
 .overlay-text {
   position: absolute;
   top: 50%;
@@ -173,11 +169,11 @@ nav {
   opacity: 1;
 }
 
-/* Margin-top adjustments for different sections */
 #about-me {
   margin-top: calc(8vh);
   margin-bottom: calc(1vh);
 }
+
 #works {
   margin-top: calc(1em);
   margin-bottom: calc(1vh + 1em);
@@ -188,22 +184,19 @@ nav {
   margin-bottom: calc(2vh + 1em);
 }
 
-/* Center Sections */
 .center-section {
   display: flex;
-  justify-content: center;  /* Horizontally center */
-  align-items: center;  /* Vertically center */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-/* Section Headers */
-.section-header {
+#section-header {
   font-size: 20px;
   color: white;
   font-family: 'Lato', sans-serif;
 }
 
-/* iframe container */
 #iframe-container {
   position: fixed;
   top: 0;
@@ -222,7 +215,6 @@ nav {
   border: none;
 }
 
-/* Vanta.Js Header */
 #vanta-bg {
   position: absolute;
   top: 0;
@@ -232,7 +224,6 @@ nav {
   z-index: -1;
 }
 
-/* Down Arrow Style */
 #down-arrow {
   margin-top: 25px;
   width: 4%;
@@ -243,4 +234,19 @@ nav {
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 3s ease-in-out;
+}
+
+/* Media Queries for Mobile Optimization */
+@media only screen and (max-width: 480px) {
+  #header { font-size: 24px; }
+  #subtitle { font-size: 18px; }
+  
+  #section-header h2 { font-size: 18px; }
+  .about-me-text, .contact-text { font-size: 14px; }
+  
+  .works-card img { max-width: 100px; max-height: 75px; }
+  .works-card { max-width: 120px; }
+  .works-card-container { flex-wrap: wrap; justify-content: center; }
+  
+  .works-card:hover { transform: none; transition: none; }
 }

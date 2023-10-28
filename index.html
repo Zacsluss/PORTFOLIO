@@ -5,49 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Zachary Sluss's portfolio designed for showcasing skills.">
   <meta name="author" content="Zachary Sluss">
-  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-  <!-- Title for the webpage displayed in browser tabs -->
   <title>Zachary Sluss - Github Portfolio</title>
 </head>
 <body>
-    <!-- Loading Spinner Container -->
-    <div id="loadingSpinner" class="spinner-container">
+    <div id="loadingSpinner" class="spinner-container" role="status">
       <div class="spinner"></div>
     </div>
-  <header id="header">
-    <!-- Your header content here -->
+  <header id="header" role="banner">
     <div>
       <h1 class="header-title">Zac Sluss</h1>
       <div id="subtitle"></div>
     </div>
-    <img id="down-arrow" src="svg/down-arrow.svg" alt="Down Arrow">
+    <img id="down-arrow" src="svg/down-arrow.svg" alt="Go to content" role="presentation">
   </header>
-  <!-- Container for the iframe, used to display an external web page -->
+  <main role="main">
   <div id="iframe-container">
-    <iframe src="https://my.spline.design/cybernetichuman-a59f7f9cbb1a1f90e6eb3165d75e016c/" loading="lazy"></iframe>
+    <iframe title="3D Design" src="https://my.spline.design/cybernetichuman-a59f7f9cbb1a1f90e6eb3165d75e016c/" loading="lazy"></iframe>
   </div>
-    <!-- About Me/Mission Statement Section -->
   <section id="about-me" class="center-section">
-    <!-- Section title -->
     <div id="section-header">
     <h2>Mission Statement</h2>
   </div>
-    <!-- Your content here -->
     <div style="height: 15px;"></div>
     <p class="about-me-text">More than Just a Tech Professional. More than Just an Artist. More than Just Passionate about Building Projects, or Solving Problems. Above All, On a Neverending Quest for Knowledge!</p>
   </section>
-  <!-- Works Section -->
   <section id="works" class="center-section">
-    <!-- Section title -->
     <div id="section-header">
     <h2>Works</h2>
-  </div>
-    <!-- Container for a list of works or projects with animated cards -->
+    </div>
     <div style="height: 20px;"></div>
     <div class="works-card-container animated-card">
-      <!-- Individual cards displaying works/projects -->
       <div class="works-card">
         <a href="https://www.credly.com/users/zachary_sluss"><img src="images/Certifications.webp" alt="Certifications" loading="lazy"></a>
         <a href="https://www.credly.com/users/zachary_sluss"><span class="overlay-text">Certifications</span></a>
@@ -66,13 +55,10 @@
       </div>
     </div>
   </section>
-  <!-- Contact Section -->
-  <section id="contact-section" class="center-section">
-    <!-- Section title -->
+  <section id="contact-section" class="center-section" aria-labelledby="contactHeader">
     <div id="section-header">
-    <h2>Contact</h2>
-  </div>
-    <!-- Your content here -->
+    <h2 id="contactHeader">Contact</h2>
+    </div>
     <div style="height: 25px;"></div>
     <div class="contact-wrapper">
       <div class="contact-text-container">
@@ -83,10 +69,10 @@
     </div>
     <div style="height: 10px;"></div>
   </section>
-    <!-- Include external JavaScript libraries and your custom script -->
-    <script src="three.r134.min.js"></script>
-    <script src="vanta.fog.min.js"></script>
-    <script src="vanta.clouds.min.js"></script>
-    <script src="script.js"></script>
+  </main>
+  <script src="three.r134.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
+  <script src="vanta.clouds.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
