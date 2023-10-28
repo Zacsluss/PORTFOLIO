@@ -175,7 +175,7 @@ nav {
 
 /* Margin-top adjustments for different sections */
 #about-me {
-  margin-top: calc(0em);
+  margin-top: calc(8vh);
   margin-bottom: calc(1vh);
 }
 #works {
