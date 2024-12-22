@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Array of descriptions
   const descriptions = [
     'Lead Sales Systems Analyst',
+    'Certified Salesforce Administrator',
     'Tech Wizard',
     'Digital Artist',
     'Licensed Remote Pilot',
